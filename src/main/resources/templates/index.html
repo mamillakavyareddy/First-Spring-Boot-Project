@@ -1,0 +1,27 @@
+<html xmlns:th="https://thymeleaf.org">
+<head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<title>First spring boot application</title>
+</head>
+
+<body>
+
+	<table class="table table-bordered table-sm">
+	<tr>
+	<th>age</th>
+	<th>fname</th>
+	<th>lname</th>
+	</tr>
+
+		<tr th:each="emp: ${emps}">
+			<td th:text="${emp.age}"></td>
+			<td th:text="${emp.fname}"></td>
+			<td th:text="${emp.lname}"></td>
+
+		</tr>
+
+	</table>
+</body>
+</html>
