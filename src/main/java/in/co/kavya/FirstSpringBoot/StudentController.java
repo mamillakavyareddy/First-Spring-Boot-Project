@@ -28,7 +28,7 @@ public class StudentController {
 		return new ResponseEntity<Object>(emp, HttpStatus.OK);
 		
 		
-		
+		//	my sample student controller
 		//this method will return JSON (java script object notation)
 		
 	}

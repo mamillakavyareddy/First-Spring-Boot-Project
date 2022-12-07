@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class IndexController {
-
+	// my index controller
 	@RequestMapping(value = "/index")
 	public String index(Model model) {
 		List<Employee> emp=new ArrayList<>();
